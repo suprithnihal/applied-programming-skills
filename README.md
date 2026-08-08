@@ -24,6 +24,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0075-sort-colors](https://github.com/suprithnihal/applied-programming-skills/tree/master/0075-sort-colors) |
 | [0283-move-zeroes](https://github.com/suprithnihal/applied-programming-skills/tree/master/0283-move-zeroes) |
 | [0344-reverse-string](https://github.com/suprithnihal/applied-programming-skills/tree/master/0344-reverse-string) |
+| [0876-middle-of-the-linked-list](https://github.com/suprithnihal/applied-programming-skills/tree/master/0876-middle-of-the-linked-list) |
 ## Array
 |  |
 | ------- |
@@ -50,6 +51,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/suprithnihal/applied-programming-skills/tree/master/0023-merge-k-sorted-lists) |
+| [0876-middle-of-the-linked-list](https://github.com/suprithnihal/applied-programming-skills/tree/master/0876-middle-of-the-linked-list) |
 ## Divide and Conquer
 |  |
 | ------- |
