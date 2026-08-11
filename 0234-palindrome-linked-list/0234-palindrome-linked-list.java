@@ -1,5 +1,8 @@
 class Solution {
     public boolean isPalindrome(ListNode head) {
+        if (head == null || head.next == null) {
+            return true;
+        }
 
         // Find the middle of the linked list
         ListNode slow = head;
@@ -12,10 +15,9 @@ class Solution {
 
         // Reverse the second half
         ListNode secondHalf = reverse(slow);
-
-        // Compare first half and reversed second half
         ListNode firstHalf = head;
 
+        // Compare both halves
         while (secondHalf != null) {
             if (firstHalf.val != secondHalf.val) {
                 return false;
@@ -28,9 +30,7 @@ class Solution {
         return true;
     }
 
-    // Function to reverse a linked list
     private ListNode reverse(ListNode head) {
-
         ListNode prev = null;
         ListNode curr = head;
 
