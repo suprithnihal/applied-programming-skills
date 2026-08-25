@@ -36,6 +36,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0075-sort-colors](https://github.com/suprithnihal/applied-programming-skills/tree/master/0075-sort-colors) |
 | [0283-move-zeroes](https://github.com/suprithnihal/applied-programming-skills/tree/master/0283-move-zeroes) |
 | [0704-binary-search](https://github.com/suprithnihal/applied-programming-skills/tree/master/0704-binary-search) |
+| [0739-daily-temperatures](https://github.com/suprithnihal/applied-programming-skills/tree/master/0739-daily-temperatures) |
 ## Sorting
 |  |
 | ------- |
@@ -83,6 +84,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0234-palindrome-linked-list](https://github.com/suprithnihal/applied-programming-skills/tree/master/0234-palindrome-linked-list) |
+| [0739-daily-temperatures](https://github.com/suprithnihal/applied-programming-skills/tree/master/0739-daily-temperatures) |
 ## Recursion
 |  |
 | ------- |
@@ -94,4 +96,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0142-linked-list-cycle-ii](https://github.com/suprithnihal/applied-programming-skills/tree/master/0142-linked-list-cycle-ii) |
+## Monotonic Stack
+|  |
+| ------- |
+| [0739-daily-temperatures](https://github.com/suprithnihal/applied-programming-skills/tree/master/0739-daily-temperatures) |
 <!---LeetCode Topics End-->
