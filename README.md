@@ -180,15 +180,18 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/suprithnihal/applied-programming-skills/tree/master/0094-binary-tree-inorder-traversal) |
+| [0100-same-tree](https://github.com/suprithnihal/applied-programming-skills/tree/master/0100-same-tree) |
 | [0102-binary-tree-level-order-traversal](https://github.com/suprithnihal/applied-programming-skills/tree/master/0102-binary-tree-level-order-traversal) |
 ## Breadth-First Search
 |  |
 | ------- |
+| [0100-same-tree](https://github.com/suprithnihal/applied-programming-skills/tree/master/0100-same-tree) |
 | [0102-binary-tree-level-order-traversal](https://github.com/suprithnihal/applied-programming-skills/tree/master/0102-binary-tree-level-order-traversal) |
 ## Binary Tree
 |  |
 | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/suprithnihal/applied-programming-skills/tree/master/0094-binary-tree-inorder-traversal) |
+| [0100-same-tree](https://github.com/suprithnihal/applied-programming-skills/tree/master/0100-same-tree) |
 | [0102-binary-tree-level-order-traversal](https://github.com/suprithnihal/applied-programming-skills/tree/master/0102-binary-tree-level-order-traversal) |
 ## Greedy
 |  |
@@ -198,4 +201,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/suprithnihal/applied-programming-skills/tree/master/0094-binary-tree-inorder-traversal) |
+| [0100-same-tree](https://github.com/suprithnihal/applied-programming-skills/tree/master/0100-same-tree) |
 <!---LeetCode Topics End-->
