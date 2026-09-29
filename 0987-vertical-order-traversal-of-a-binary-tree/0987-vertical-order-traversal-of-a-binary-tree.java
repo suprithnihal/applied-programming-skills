@@ -1,71 +1,59 @@
 class Solution {
-
-    static class Node {
-        TreeNode node;
-        int row;
-        int col;
-
-        Node(TreeNode node, int row, int col) {
-            this.node = node;
-            this.row = row;
-            this.col = col;
-        }
-    }
-
     public List<List<Integer>> verticalTraversal(TreeNode root) {
-        List<List<Integer>> result = new ArrayList<>();
+        List<int[]> nodes = new ArrayList<>();
 
-        if (root == null) {
-            return result;
-        }
-
-        // column -> nodes
-        TreeMap<Integer, List<Node>> map = new TreeMap<>();
-
-        Queue<Node> queue = new LinkedList<>();
-        queue.offer(new Node(root, 0, 0));
+        // {node, row, col}
+        Queue<Object[]> queue = new LinkedList<>();
+        queue.offer(new Object[]{root, 0, 0});
 
         while (!queue.isEmpty()) {
-            Node current = queue.poll();
+            Object[] curr = queue.poll();
 
-            map.putIfAbsent(current.col, new ArrayList<>());
-            map.get(current.col).add(current);
+            TreeNode node = (TreeNode) curr[0];
+            int row = (int) curr[1];
+            int col = (int) curr[2];
 
-            if (current.node.left != null) {
-                queue.offer(new Node(
-                    current.node.left,
-                    current.row + 1,
-                    current.col - 1
-                ));
+            // Store {column, row, value}
+            nodes.add(new int[]{col, row, node.val});
+
+            if (node.left != null) {
+                queue.offer(new Object[]{
+                    node.left, row + 1, col - 1
+                });
             }
 
-            if (current.node.right != null) {
-                queue.offer(new Node(
-                    current.node.right,
-                    current.row + 1,
-                    current.col + 1
-                ));
+            if (node.right != null) {
+                queue.offer(new Object[]{
+                    node.right, row + 1, col + 1
+                });
             }
         }
 
-        // Process columns from left to right
-        for (List<Node> nodes : map.values()) {
+        // Sort by column, then row, then value
+        nodes.sort((a, b) -> {
+            if (a[0] != b[0])
+                return Integer.compare(a[0], b[0]);
 
-            // Sort by row, then by value
-            nodes.sort((a, b) -> {
-                if (a.row != b.row) {
-                    return Integer.compare(a.row, b.row);
-                }
-                return Integer.compare(a.node.val, b.node.val);
-            });
+            if (a[1] != b[1])
+                return Integer.compare(a[1], b[1]);
 
-            List<Integer> column = new ArrayList<>();
+            return Integer.compare(a[2], b[2]);
+        });
 
-            for (Node n : nodes) {
-                column.add(n.node.val);
+        List<List<Integer>> result = new ArrayList<>();
+
+        int currentColumn = Integer.MIN_VALUE;
+
+        for (int[] node : nodes) {
+            int col = node[0];
+            int value = node[2];
+
+            if (col != currentColumn) {
+                result.add(new ArrayList<>());
+                currentColumn = col;
             }
 
-            result.add(column);
+            result.get(result.size() - 1).add(value);
         }
 
         return result;
